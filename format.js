@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   doucment.addEventListener('click', function(event){
     element = event.target;
-    if (element.className ==== 'remove') {
+    if (element.className === 'remove') {
       element.parentElement.remove();
     }
   })
