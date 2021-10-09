@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
   
-  document.querySelector("#new-task").onsubmit =function(){
+  document.querySelector("#new-task").onsubmit = function() {
     
     const li = document.createElement('li');
     
     let task_text = document.querySelector('#task').value;
-    let new_task_html =` 
+    let new_task_html = ` 
     
                          <span> ${task_text} </span>
                          <button class = "remove"> Remove </button>
@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function(){
     return false;
   }
   
-  doucment.addEventListener('click', function(event)){
+  doucment.addEventListener('click', function(event){
     element = event.target;
-    if(element.className ==== 'remove'){
+    if (element.className ==== 'remove') {
       element.parentElement.remove();
     }
   })
