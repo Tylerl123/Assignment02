@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         
                         `;
     
-    li innerHTML = new_task_html
+    li.innerHTML = new_task_html
    
     document.querySelector("#task_list").append(li);
     document.querySelector('#task').value = '';
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
    
-  })
+  });
   
   
   
