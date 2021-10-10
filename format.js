@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-  
+  /*
   let all_tasks = [];
     all_tasks.toString = () => {
         array.forEach(element => {
             return `element.innerHTML\n`
         });
     }
-    
+    */
   document.querySelector("#new-task").onsubmit = function() {
     
     const li = document.createElement('li');
