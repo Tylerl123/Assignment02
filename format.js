@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let new_task_html = ` 
                          <span> ${task_text} </span> 
-                         <h4> ${task_list} </h4> <br>
-                         <button class ="remove">Remove</button>
                          
+                         <button class ="remove">Remove</button>
+                         <h4> ${task_list} </h4> <br>
                         
                         `;
     li.innerHTML = new_task_html
