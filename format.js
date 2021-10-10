@@ -19,7 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
     let task_list = document.querySelector('#priorty').value;
-   
+    let new_list_html = ` 
+    
+                         <span> ${task_text} </span>
+                        
+                        `;
+    li.innerHTML = new_list_html
     
     document.querySelector("#task_list").append(li);
     document.querySelector("#priorty").value = '';
