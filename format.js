@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let task_list = document.querySelector('#priorty').value;
     
     let new_task_html = ` 
-                         <t class="displayed-task"> ${task_text} </t> 
+                         <span> ${task_text} </span> 
                          <h4> ${task_list} </h4> <br>
-                        
+                         <button class ="remove">Remove</button>
                          
                         
                         `;
