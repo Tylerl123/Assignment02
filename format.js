@@ -2,19 +2,10 @@
 
 document.addEventListener('DOMContentLoaded', function() {
  
- let the_task = [];
- the_task.tostring = () => {
-  array.forEach(element => {
-   return `element.innerHTML\n`
-  });
- }
  
- 
- 
- 
-  document.querySelector("#new-task").onsubmit = function a() {
+  document.querySelector("#new-task").onsubmit = function () {
     
-    let li = document.createElement('li');
+    const li = document.createElement('li');
     
     let task_text = document.querySelector('#task').value;
     let task_li = document.querySelector('#priorty').value;
@@ -27,9 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         
                         `;
     
-    //li innerHTML = new_task_html
+    li innerHTML = new_task_html
+   
     document.querySelector("#task_list").append(li);
-    the_task.push(li)
+    document.querySelector('#task').value='';
+ 
     
      return false;
     
@@ -46,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     element = event.target;
     if (element.className === 'remove') {
         element.parentElement.remove();
-        index= the_task.indexOf(element.parentElement);
-        the_task.splice(index, 1)
+        
     }
     
    
