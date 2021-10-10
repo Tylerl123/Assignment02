@@ -13,7 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
     li.innerHTML = new_task_html
     
     document.querySelector("#task_list").append(li);
-    document.querySelector("#task").value = '';
+    document.querySelector("#priorty").value = '';
+    
+    let task_text = document.querySelector('#priorty').value;
+   
+    
+    document.querySelector("#task_list").append(li);
+    document.querySelector("#priorty").value = '';
+    
     
     return false;
   }
