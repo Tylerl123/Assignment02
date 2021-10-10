@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
   document.querySelector("#new-task").onsubmit = function() {
     
-    const li = document.createElement('li');
+    let li = document.createElement('li');
     
     let task_text = document.querySelector('#task').value;
+    let task_list = document.querySelector('#priorty').value;
+    
     let new_task_html = ` 
     
                          <span> ${task_text} </span>
@@ -13,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     li.innerHTML = new_task_html
     
     document.querySelector("#task_list").append(li);
-    document.querySelector("#task").value = '';
+  
     
     
     
@@ -43,10 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (element.className === 'remove') {
       element.parentElement.remove();
     }
+    
+    return false;
   })
   
   
-  return false;
+  
   
 });
   
