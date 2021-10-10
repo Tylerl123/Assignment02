@@ -19,19 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   
-  
-  document.querySelector(".order").onsubmit = function() {
-    
-    const li = document.createElement('li');
-    
-     let task_text = document.querySelector('.priorty').value;
-    
-     document.querySelector(".order_list").append(li);
-     document.querySelector(".priorty").value = '';
-    
-     return false;
-    
-  }
+
   
   document.addEventListener('click', function(event){
     element = event.target;
