@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const li = document.createElement('li');
     
     let task_text = document.querySelector('#task').value;
-    let task_li = document.querySelector('#priorty').value;
+   // let task_li = document.querySelector('#priorty').value;
     
     let new_task_html = ` 
                          <span> ${task_text} </span> 
                          
                          <button class ="remove">Remove</button>
-                         <h4> ${task_li} </h4> <br>
+                         
                         
                         `;
     
