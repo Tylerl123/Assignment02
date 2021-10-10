@@ -1,12 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  /*
-  let all_tasks = [];
-    all_tasks.toString = () => {
-        array.forEach(element => {
-            return `element.innerHTML\n`
-        });
-    }
-    */
+ 
   document.querySelector("#new-task").onsubmit = function() {
     
     const li = document.createElement('li');
@@ -28,20 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
      return false;
     
-    /*
-    
-    let task_list = document.querySelector('#priorty').value;
-    let new_list_html = ` 
-    
-                         <span style: "text-align: center" > ${task_list} </span>
-                        
-                        `;
-    li.innerHTML = new_list_html
-    
-    document.querySelector("#task_list").append(li);
-    document.querySelector("#priorty").value = '';
-    
-    */
+   
   
   }
   
@@ -57,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
    
-  })
+  });
   
   
   
