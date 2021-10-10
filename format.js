@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let task_text = document.querySelector('#task').value;
     let task_li = document.querySelector('#priorty').value;
     
-    li innerHTML = ` 
+    let new_task_html = ` 
                          <span> ${task_text} </span> 
                          
                          <button class ="remove">Remove</button>
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         
                         `;
     
-    
+    li innerHTML = new_task_html
     document.querySelector("#task_list").append(li);
     the_task.push(li)
     
