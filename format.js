@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
  
-  document.querySelector("#new-task").onsubmit = function() {
+ 
+ 
+ 
+ 
+ 
+  document.querySelector("#new-task").onsubmit = function a() {
     
     const li = document.createElement('li');
     
