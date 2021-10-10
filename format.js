@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector("#priorty").value = '';
     
     
-    return false;
+  
   }
   
   
@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
       element.parentElement.remove();
     }
   })
+  
+  
+  return false;
   
 });
   
