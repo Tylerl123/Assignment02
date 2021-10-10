@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (element.className === 'remove') {
       element.parentElement.remove();
     }
-  })
+ // })
   
 });
   
