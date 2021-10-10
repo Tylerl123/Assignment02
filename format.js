@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
     li.innerHTML = new_task_html
     
     document.querySelector("#task_list").append(li);
-    document.querySelector("#priorty").value = '';
+    document.querySelector("#task").value = '';
+    
+    const li = document.createElement('li'); 
+    
     
     let task_list = document.querySelector('#priorty').value;
    
