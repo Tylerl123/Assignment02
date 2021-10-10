@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let task_list = document.querySelector('#priorty').value;
     let new_list_html = ` 
     
-                         <span> ${task_list} </span>
+                         <span style: "text-align: center" > ${task_list} </span>
                         
                         `;
     li.innerHTML = new_list_html
