@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector("#task_list").append(li);
     document.querySelector("#priorty").value = '';
     
-    let task_text = document.querySelector('#priorty').value;
+    let task_list = document.querySelector('#priorty').value;
    
     
     document.querySelector("#task_list").append(li);
