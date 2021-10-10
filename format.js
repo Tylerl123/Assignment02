@@ -1,4 +1,4 @@
-alert ('niggga');
+
 
 document.addEventListener('DOMContentLoaded', function() {
  
