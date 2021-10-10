@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
   
+  let all_tasks = [];
+    all_tasks.toString = () => {
+        array.forEach(element => {
+            return `element.innerHTML\n`
+        });
+    }
+    
   document.querySelector("#new-task").onsubmit = function() {
     
     let li = document.createElement('li');
@@ -8,9 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let task_list = document.querySelector('#priorty').value;
     
     let new_task_html = ` 
-    
-                         <span> ${task_text} </span>
+                         <t class="displayed-task_text">${task_title}</t>
+                        
+                         
                          <button class = "remove"> Remove </button>
+                         <span class="displayed-task_list"></span>
                         `;
     li.innerHTML = new_task_html
     
@@ -18,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
     
-    
+    /*
     
     let task_list = document.querySelector('#priorty').value;
     let new_list_html = ` 
@@ -31,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector("#task_list").append(li);
     document.querySelector("#priorty").value = '';
     
-    
+    */
   
   }
   
