@@ -43,7 +43,12 @@ document.querySelector("#new-task").onsubmit = () => {
   }
   else if (element.className === 'completed') { 
    document.querySelector("#point").style.textDecoration = "line-through";
-   //this.querySelector('.displayed-task').style.textDecoration = (this.querySelector(".status").status) ? "line-through" : "none";
+   let new_tasks = `
+  
+  
+   <h3 class = "status " id = "point">  ${new_task} ${new_priorty}  Completed </h3> <br>
+   
+   `;
    //document.querySelector(".status").innerHTML = "COMPLETED";
   }
   
