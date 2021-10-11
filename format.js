@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   
-document.querySelector("#new-task").onsubmit = function task_list() {
+  
+document.querySelector("#new-task").onsubmit = function () {
   const li = document.createElement('li');
   let new_task = document.querySelector('#task').value;
   let new_priorty = document.querySelector('#priorty').value;
@@ -24,7 +25,7 @@ document.querySelector("#new-task").onsubmit = function task_list() {
   if (element.className === 'remove') {
     element.parentElement.remove();
   }
- if (element.className === 'completed') { 
+  else if (element.className === 'completed') { 
    document.querySelector("#point").style.textDecoration = "line-through";
    document.querySelector("#status").innerHTML = "COMPLETED";
   }
