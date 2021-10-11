@@ -21,7 +21,8 @@ document.querySelector("#new-task").onsubmit = () => {
   let new_tasks = `
   
   
-  <h3 class = "status " id = "point">  ${new_task} ${new_priorty}  PENDING </h3> <br>
+  <h3  id = "point">  ${new_task} ${new_priorty}  PENDING </h3> <br>
+  <h3  class="status">  c </h3> <br>
   <input type = "radio" class = "remove"> <p> Remove from List </p>
   <input type = "radio" class = "completed"> <p> Mark as Completed </p>
   `;
@@ -43,13 +44,8 @@ document.querySelector("#new-task").onsubmit = () => {
   }
   else if (element.className === 'completed') { 
    document.querySelector("#point").style.textDecoration = "line-through";
-   let new_tasks = `
-  
-  
-   <h3 class = "status " id = "point">  ${new_task} ${new_priorty}  Completed </h3> <br>
    
-   `;
-   //document.querySelector(".status").innerHTML = "COMPLETED";
+   document.querySelector(".status").innerHTML = "COMPLETED";
   }
   
     
