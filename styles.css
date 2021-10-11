@@ -2,3 +2,7 @@ h1{
  color 
 }
 
+#completed_task {
+  color: black;
+  text-decoration: line-through;
+}
