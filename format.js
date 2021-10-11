@@ -22,7 +22,7 @@ document.querySelector("#new-task").onsubmit = () => {
   
   
   <h3  id = "point">  ${new_task} ${new_priorty}  PENDING </h3> <br>
-  <h3  class="status">  c </h3> <br>
+  <h3  class="status">   </h3> <br>
   <input type = "radio" class = "remove"> <p> Remove from List </p>
   <input type = "radio" class = "completed"> <p> Mark as Completed </p>
   `;
