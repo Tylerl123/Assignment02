@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
   
-document.querySelector("#new-task").onsubmit = function () {
+document.querySelector("#new-task").onsubmit = () => {
   let li = document.createElement('li');
   let new_task = document.querySelector('#task').value;
   let new_priorty = document.querySelector('#priorty').value;
@@ -32,9 +32,9 @@ document.querySelector("#new-task").onsubmit = function () {
   the_tasks.push(li)
   
   
-}
 
-  document.addEventListener('click', function(event) {
+
+  li.addEventListener('click', function(event) {
   element = event.target;
   if (element.className === 'remove') {
     element.parentElement.remove();
@@ -46,9 +46,13 @@ document.querySelector("#new-task").onsubmit = function () {
    document.querySelector("#status").innerHTML = "COMPLETED";
   }
   
-    document.querySelector("#submit").disabled = true;
-    document.querySelector("#task").value = '';
-    return false;
+    
 });
+   
+   document.querySelector("#submit").disabled = true;
+   document.querySelector("#task").value = '';
+   return false;
+   
+}
 });
 
