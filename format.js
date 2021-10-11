@@ -30,8 +30,8 @@ document.querySelector("#new-task").onsubmit = function () {
   
   document.querySelector("#task_list").append(li);
   the_tasks.push(li)
-  document.querySelector("#task").value = '';
-  return false;
+  
+  
 }
 
   document.addEventListener('click', function(event) {
@@ -47,6 +47,8 @@ document.querySelector("#new-task").onsubmit = function () {
   }
   
     document.querySelector("#submit").disabled = true;
+    document.querySelector("#task").value = '';
+    return false;
 });
 });
 
