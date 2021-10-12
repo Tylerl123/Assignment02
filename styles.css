@@ -9,6 +9,11 @@ body{
  color:lightblue;
 }
 
+h2{
+   margin-left: 20px;
+   color:lightgreen;
+}
+
 h3{
    font-family: "Arial", sans-serif;
    text-align: center;
