@@ -4,18 +4,13 @@ h1{
    text-align: center;
     border-style: solid;
 }
-/*
-#completed_task {
-  color: black;
-  text-decoration: line-through;
-}
-*/
+
 body{
  color:lightblue;
 }
 
 h3{
    font-family: "Arial", sans-serif;
-   text-align: center;
+   word-spacing:100px;
    color:navy;
 }
