@@ -1,18 +1,21 @@
 h1{
+   font-weight: bold;
+   background-color: red;
    text-align: center;
     border-style: solid;
 }
-
+/*
 #completed_task {
   color: black;
   text-decoration: line-through;
 }
-
+*/
 body{
  color:lightblue;
 }
 
 h3{
-   
-   word-spacing: 100px;
+   font-family: "Arial", sans-serif;
+   text-align: center;
+   color:navy;
 }
