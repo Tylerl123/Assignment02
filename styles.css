@@ -15,3 +15,9 @@ h3{
    word-spacing: 100px;
    color:navy;
 }
+
+img{
+    border-style: solid;
+    border-color: blue;
+    border-radius: 50px;
+ }
