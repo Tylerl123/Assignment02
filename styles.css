@@ -11,12 +11,12 @@ body{
 
 h2{
    margin-left: 20px;
-   color:lightgreen;
+   color:darkblue;
 }
 
 h3{
    font-family: "Arial", sans-serif;
-   text-align: center;
+   text-align: left;
    word-spacing: 100px;
    color:darkgreen;
 }
@@ -27,5 +27,5 @@ img{
     border-radius: 50px;
     height: 300px;
     width: 600px;
-    margin-left: 20px;
+    margin-left: 70px;
  }
