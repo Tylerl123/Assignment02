@@ -21,7 +21,7 @@ document.querySelector("#new-task").onsubmit = () => {
   let new_tasks = `
   
   
-  <h3  id = "add">  ${new_task} ${new_priorty}  PENDING </h3> <br>
+  <h3  id = "add">  ${new_task} ${new_priorty}  Unresolved </h3> <br>
   <h3  class="status">   </h3> <br>
   <input type = "radio" class = "remove"> <p> Remove from List </p>
   <input type = "radio" class = "completed"> <p> Mark as Completed </p>
@@ -45,7 +45,7 @@ document.querySelector("#new-task").onsubmit = () => {
   else if (element.className === 'completed') { 
    li.querySelector("#add").style.textDecoration = "line-through";
    
-   li.querySelector(".status").innerHTML = "COMPLETED";
+   li.querySelector(".status").innerHTML = "Completed";
   }
   
     
