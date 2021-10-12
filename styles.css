@@ -29,3 +29,8 @@ img{
     width: 600px;
     margin-left: 200px;
  }
+
+#line {
+  color: black;
+  text-decoration: line-through;
+}
