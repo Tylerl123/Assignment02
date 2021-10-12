@@ -20,4 +20,6 @@ img{
     border-style: solid;
     border-color: blue;
     border-radius: 50px;
+    height: 300px;
+    width: 300px;
  }
