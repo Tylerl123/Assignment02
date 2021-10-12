@@ -43,7 +43,7 @@ document.querySelector("#new-task").onsubmit = () => {
     the_tasks.splice(index,1)
   }
   else if (element.className === 'completed') { 
-   document.querySelector("#point").style.textDecoration = "line-through";
+   li.querySelector("#point").style.textDecoration = "line-through";
    
    li.querySelector(".status").innerHTML = "COMPLETED";
   }
