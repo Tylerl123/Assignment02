@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+   ////
+   ////
+   ////
+   ////
    document.addEventListener('input', function() {
         if (document.querySelector("#task").value.length == 0) {
             document.querySelector("#submit").disabled = true;
@@ -7,6 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector("#submit").disabled = false;
         }
     })
+   
+   ////
+   ////
+   ////
+   ////
   let the_tasks = [];
     the_tasks.toString = () => {
         array.forEach(element => {
@@ -14,6 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
   
+   ////
+   ////
+   ////
+   ////
 document.querySelector("#new-task").onsubmit = () => {
   let li = document.createElement('li');
   let new_task = document.querySelector('#task').value;
@@ -32,7 +45,10 @@ document.querySelector("#new-task").onsubmit = () => {
   document.querySelector("#task_list").append(li);
   the_tasks.push(li)
   
-  
+   ////
+   ////
+   ////
+   ////
 
 
   li.addEventListener('click', function(event) {
@@ -51,6 +67,10 @@ document.querySelector("#new-task").onsubmit = () => {
     
 });
    
+   ////
+   ////
+   ////
+   ////
    document.querySelector("#submit").disabled = true;
    document.querySelector("#task").value = '';
    return false;
